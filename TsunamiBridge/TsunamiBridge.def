@@ -1,0 +1,19 @@
+LIBRARY TSUNAMIBRIDGE
+EXPORTS
+AddTorrentParams_Create
+AddTorrentParams_Destroy
+AddTorrentParams_Name_Get
+AddTorrentParams_Name_Set
+AddTorrentParams_SavePath_Get
+AddTorrentParams_SavePath_Set
+AddTorrentParams_TorrentInfo_Get
+AddTorrentParams_TorrentInfo_Set
+Session_AsyncAddTorrent
+Session_Create
+Session_Destroy
+Session_LoadState
+Session_SaveState
+Session_PostTorrentUpdates
+Session_FindTorrent
+TorrentInfo_Create
+TorrentInfo_Destroy
