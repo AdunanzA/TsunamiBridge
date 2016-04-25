@@ -1,19 +1,20 @@
 #include "LibtorrentLazyEntry.h"
 
 
-
-CLibtorrentLazyEntry::CLibtorrentLazyEntry()
+TSUNAMIBRIDGE_API libtorrent::lazy_entry *CC LazyEntry_Create()
 {
-	lazy_entry_ = new libtorrent::lazy_entry();
+	return new libtorrent::lazy_entry();
 }
 
-CLibtorrentLazyEntry::CLibtorrentLazyEntry(libtorrent::lazy_entry & le)
+TSUNAMIBRIDGE_API libtorrent::lazy_entry *CC LazyEntry_Create2(libtorrent::lazy_entry * le)
 {
-	lazy_entry_ = new libtorrent::lazy_entry();
-	lazy_entry_->swap(le);
+	libtorrent::lazy_entry *tmp = new libtorrent::lazy_entry();
+	tmp->swap(*le);
+	return tmp;
 }
 
-CLibtorrentLazyEntry::~CLibtorrentLazyEntry()
+TSUNAMIBRIDGE_API void	CC LazyEntry_Destroy(libtorrent::lazy_entry * le)
 {
-	delete lazy_entry_;
+	delete le;
+	le = nullptr;
 }

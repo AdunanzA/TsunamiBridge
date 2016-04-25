@@ -10,7 +10,7 @@ TSUNAMIBRIDGE_API void CC Session_Destroy()
 	if (_session)
 	{
 		delete _session;
-		_session = NULL;
+		_session = nullptr;
 	}
 }
 

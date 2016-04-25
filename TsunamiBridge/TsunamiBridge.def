@@ -8,6 +8,11 @@ AddTorrentParams_SavePath_Get
 AddTorrentParams_SavePath_Set
 AddTorrentParams_TorrentInfo_Get
 AddTorrentParams_TorrentInfo_Set
+Entry_Create
+Entry_Destroy
+LazyEntry_Create
+LazyEntry_Create2
+LazyEntry_Destroy
 Session_AsyncAddTorrent
 Session_Create
 Session_Destroy

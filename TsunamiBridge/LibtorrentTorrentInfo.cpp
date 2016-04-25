@@ -8,5 +8,5 @@ libtorrent::torrent_info * TorrentInfo_Create(const char * filename)
 void TorrentInfo_Destroy(libtorrent::torrent_info * ti)
 {
 	delete ti;
-	ti = NULL;
+	ti = nullptr;
 }

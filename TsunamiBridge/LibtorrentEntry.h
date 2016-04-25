@@ -1,10 +1,12 @@
 #pragma once
 
+#include "TsunamiBridge.h"
 #include <libtorrent/entry.hpp>
-#include <map>
-#include <string>
-#include <list>
 
+TSUNAMIBRIDGE_API libtorrent::entry	*		CC	Entry_Create();
+TSUNAMIBRIDGE_API void						CC	Entry_Destroy(libtorrent::entry * e);
+
+/*
 class CLibtorrentEntry
 {
 public:
@@ -17,4 +19,4 @@ public:
 private:
 	libtorrent::entry * entry_;
 };
-
+*/

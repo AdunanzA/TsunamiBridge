@@ -8,7 +8,7 @@ TSUNAMIBRIDGE_API libtorrent::add_torrent_params * AddTorrentParams_Create()
 TSUNAMIBRIDGE_API void CC AddTorrentParams_Destroy(libtorrent::add_torrent_params * atp)
 {
 	delete atp;
-	atp = NULL;
+	atp = nullptr;
 }
 
 TSUNAMIBRIDGE_API void CC AddTorrentParams_Name_Get(libtorrent::add_torrent_params * params_, char * s,int size)
