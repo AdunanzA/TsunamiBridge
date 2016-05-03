@@ -4,8 +4,8 @@
 	#else
 		#define TSUNAMIBRIDGE_API __declspec(dllimport)
 	#endif
-	#define CC	__cdecl
+	#define CC	__stdcall
 #else
 	#define TSUNAMIBRIDGE_API
-	#define CC __attribute__((cdecl))
+	#define CC __attribute__((stdcall))
 #endif // _WIN32
