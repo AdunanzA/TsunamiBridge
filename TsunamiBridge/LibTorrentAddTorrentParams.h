@@ -19,4 +19,4 @@ TSUNAMIBRIDGE_API void									CC	AddTorrentParams_Url_Set(libtorrent::add_torre
 TSUNAMIBRIDGE_API void									CC	AddTorrentParams_Url_Get(libtorrent::add_torrent_params * params_, char * s, int size);
 TSUNAMIBRIDGE_API libtorrent::sha1_hash				*	CC	AddTorrentParams_Sha1Hash_Get(libtorrent::add_torrent_params * params_);
 TSUNAMIBRIDGE_API void									CC	AddTorrentParams_Sha1Hash_Set(libtorrent::add_torrent_params * params_, libtorrent::sha1_hash * hash);
-TSUNAMIBRIDGE_API void									CC	AddTorrentParams_Trackers_Get(libtorrent::add_torrent_params * params_, const char ** array);
+TSUNAMIBRIDGE_API void									CC	AddTorrentParams_Trackers_Get(libtorrent::add_torrent_params * params_, char ** array);

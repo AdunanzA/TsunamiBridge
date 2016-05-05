@@ -48,6 +48,9 @@
     <ClInclude Include="LibTorrentAlert.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
+    <ClInclude Include="LibtorrentAlertTypes.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -78,6 +81,9 @@
       <Filter>File di origine</Filter>
     </ClCompile>
     <ClCompile Include="LibTorrentAlert.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="LibtorrentAlertTypes.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
   </ItemGroup>

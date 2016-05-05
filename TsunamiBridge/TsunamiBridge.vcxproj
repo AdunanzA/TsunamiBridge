@@ -160,6 +160,7 @@
   <ItemGroup>
     <ClInclude Include="LibTorrentAddTorrentParams.h" />
     <ClInclude Include="LibTorrentAlert.h" />
+    <ClInclude Include="LibtorrentAlertTypes.h" />
     <ClInclude Include="LibtorrentEntry.h" />
     <ClInclude Include="LibtorrentLazyEntry.h" />
     <ClInclude Include="LibtorrentSession.h" />
@@ -172,6 +173,7 @@
   <ItemGroup>
     <ClCompile Include="LibTorrentAddTorrentParams.cpp" />
     <ClCompile Include="LibTorrentAlert.cpp" />
+    <ClCompile Include="LibtorrentAlertTypes.cpp" />
     <ClCompile Include="LibtorrentEntry.cpp" />
     <ClCompile Include="LibtorrentLazyEntry.cpp" />
     <ClCompile Include="LibtorrentSession.cpp" />

@@ -72,7 +72,10 @@ TSUNAMIBRIDGE_API void CC AddTorrentParams_Sha1Hash_Set(libtorrent::add_torrent_
 	params_->info_hash = *hash;
 }
 
-TSUNAMIBRIDGE_API void CC AddTorrentParams_Trackers_Get(libtorrent::add_torrent_params * params_, const char ** array)
+TSUNAMIBRIDGE_API void CC AddTorrentParams_Trackers_Get(libtorrent::add_torrent_params * params_, char ** array)
 {
-	//params_->trackers.size()
+	for (size_t i = 0; i <= params_->trackers.size(); i++)
+	{
+		strcpy(array[i], params_->trackers[i].c_str());
+	}
 }

@@ -17,6 +17,16 @@ AddTorrentParams_Sha1Hash_Get
 AddTorrentParams_Sha1Hash_Set
 AddTorrentParams_Trackers_Get
 
+Alert_Destroy
+Alert_What_Get
+Alert_Message_Get
+Alert_Type_Get
+Alert_Category_Get
+
+Alert_TorrentAlert_TorrentHandle_Get
+Alert_PeerAlert_Pid_Get
+Alert_TrackerAlert_Url_Get
+
 Entry_Create
 Entry_Destroy
 
