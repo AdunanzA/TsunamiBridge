@@ -15,6 +15,7 @@ AddTorrentParams_Url_Set
 AddTorrentParams_Url_Get
 AddTorrentParams_Sha1Hash_Get
 AddTorrentParams_Sha1Hash_Set
+AddTorrentParams_Trackers_Size_Get
 AddTorrentParams_Trackers_Get
 
 Alert_Destroy
@@ -26,14 +27,29 @@ Alert_Category_Get
 Alert_TorrentAlert_TorrentHandle_Get
 Alert_PeerAlert_Pid_Get
 Alert_TrackerAlert_Url_Get
+Alert_ReadPieceAlert_Buffer_Size_Get
+Alert_ReadPieceAlert_Buffer_Get
+Alert_ReadPieceAlert_Piece_Get
+Alert_FileCompletedAlert_Index_Get
+Alert_FileRenamedAlert_Name_Get
+Alert_FileRenamedAlert_Index_Get
+Alert_FileRenameFailedAlert_Index_Get
+Alert_FileRenameFailedAlert_Error_Get
+Alert_PerformanceAlert_WarningCode_Get
 
 Entry_Create
 Entry_Destroy
+
+ErrorCode_Create
+ErrorCode_Destroy
+ErrorCode_Message_Get
+ErrorCode_Value_Get
 
 LazyEntry_Create
 LazyEntry_Create2
 LazyEntry_Destroy
 
+Session_AddTorrent
 Session_AsyncAddTorrent
 Session_Create
 Session_Destroy
@@ -42,13 +58,18 @@ Session_SaveState
 Session_PostTorrentUpdates
 Session_FindTorrent
 Session_SetCallback
+Session_ClearCallback
 
 Sha1Hash_Create
 Sha1Hash_Destroy
 
-TorrenHandle_Create
-TorrenHandle_Destroy
-TorrenHandle_IsValid
+TorrentHandle_Create
+TorrentHandle_Destroy
+TorrentHandle_IsValid
+TorrentHandle_Status
 
 TorrentInfo_Create
 TorrentInfo_Destroy
+
+TorrentStatus_Create
+TorrentStatus_Destroy

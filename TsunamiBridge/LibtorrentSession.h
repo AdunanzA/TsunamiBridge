@@ -18,5 +18,7 @@ TSUNAMIBRIDGE_API void								CC 	Session_LoadState(libtorrent::lazy_entry * laz
 TSUNAMIBRIDGE_API void								CC 	Session_SaveState(libtorrent::entry *entry, unsigned int flags);
 TSUNAMIBRIDGE_API void								CC 	Session_PostTorrentUpdates();
 TSUNAMIBRIDGE_API libtorrent::torrent_handle	*	CC 	Session_FindTorrent(libtorrent::sha1_hash * info_hash);
+TSUNAMIBRIDGE_API libtorrent::torrent_handle	*	CC 	Session_AddTorrent(libtorrent::add_torrent_params * params);
 TSUNAMIBRIDGE_API void								CC 	Session_AsyncAddTorrent(libtorrent::add_torrent_params * params);
 TSUNAMIBRIDGE_API void								CC	Session_SetCallback(ProgressCallback progressCallback);
+TSUNAMIBRIDGE_API void								CC	Session_ClearCallback();
